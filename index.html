@@ -45,11 +45,19 @@
   <h3>Join the HILX Dispatch</h3>
   <p>Get early access and updates.</p>
 
-  <form action="https://buttondown.email/revpi" method="post" target="popupwindow"
-        onsubmit="window.open('https://buttondown.email/revpi', 'popupwindow')"
-        class="embeddable-buttondown-form">
-    <input type="email" name="email" placeholder="Enter your email">
-    <input type="submit" value="Join">
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/revpi"
+    method="post"
+    class="embeddable-buttondown-form"
+  >
+    <label for="bd-email">Enter your email</label>
+    <input type="email" name="email" id="bd-email" />
+    <input type="submit" value="Subscribe" />
+    <p>
+      <a href="https://buttondown.com/refer/revpi" target="_blank">
+        Powered by Buttondown.
+      </a>
+    </p>
   </form>
 
 </body>
