@@ -24,10 +24,14 @@
       color: #777;
       font-size: 1.2rem;
     }
+    .form-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
     input[type="email"] {
       padding: 10px;
-      width: 70%;
-      margin-right: 10px;
+      flex: 1;
     }
     input[type="submit"] {
       padding: 10px 20px;
@@ -51,8 +55,10 @@
     class="embeddable-buttondown-form"
   >
     <label for="bd-email">Enter your email</label>
-    <input type="email" name="email" id="bd-email" />
-    <input type="submit" value="Subscribe" />
+    <div class="form-row">
+      <input type="submit" value="Subscribe" />
+      <input type="email" name="email" id="bd-email" />
+    </div>
     <p>
       <a href="https://buttondown.com/refer/revpi" target="_blank">
         Powered by Buttondown.
